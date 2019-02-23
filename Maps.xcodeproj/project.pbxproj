@@ -13,6 +13,8 @@
 		5180AEBD2221C692001D3199 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5180AEBC2221C692001D3199 /* Assets.xcassets */; };
 		5180AEC02221C692001D3199 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5180AEBE2221C692001D3199 /* LaunchScreen.storyboard */; };
 		5180AECB2221C692001D3199 /* MapsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5180AECA2221C692001D3199 /* MapsTests.swift */; };
+		51D6C9B72221CAF000FEFF09 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51D6C9B62221CAF000FEFF09 /* MapKit.framework */; };
+		51D6C9B92221CAF700FEFF09 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51D6C9B82221CAF700FEFF09 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		5180AEC62221C692001D3199 /* MapsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5180AECA2221C692001D3199 /* MapsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsTests.swift; sourceTree = "<group>"; };
 		5180AECC2221C692001D3199 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51D6C9B62221CAF000FEFF09 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		51D6C9B82221CAF700FEFF09 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51D6C9B92221CAF700FEFF09 /* CoreLocation.framework in Frameworks */,
+				51D6C9B72221CAF000FEFF09 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +68,7 @@
 				5180AEB42221C691001D3199 /* Maps */,
 				5180AEC92221C692001D3199 /* MapsTests */,
 				5180AEB32221C691001D3199 /* Products */,
+				51D6C9B52221CAF000FEFF09 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,6 +101,15 @@
 				5180AECC2221C692001D3199 /* Info.plist */,
 			);
 			path = MapsTests;
+			sourceTree = "<group>";
+		};
+		51D6C9B52221CAF000FEFF09 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				51D6C9B82221CAF700FEFF09 /* CoreLocation.framework */,
+				51D6C9B62221CAF000FEFF09 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -361,12 +377,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B8W6C29XUS;
 				INFOPLIST_FILE = Maps/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Self.Maps;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.comcast.home.Tech360-QA";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -378,12 +395,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B8W6C29XUS;
 				INFOPLIST_FILE = Maps/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Self.Maps;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.comcast.home.Tech360-QA";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
